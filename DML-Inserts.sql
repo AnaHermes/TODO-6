@@ -1,0 +1,61 @@
+USE boutique_amora;
+
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('camiseta', 'blusa feminina tie dye', 'estamada', 'p', 69.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('camiseta', 'blusa feminina tie dye', 'estamada', 'm', 69.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('camiseta', 'blusa feminina tie dye', 'estamada', 'g', 69.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('calçado', 'tênis all star', 'azul', '35', 199.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('calçado', 'tênis all star', 'azul', '37', 199.90, 1);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('calçado', 'tênis all star', 'rosa', '36', 199.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('calçado', 'tênis all star', 'preto', '38', 199.90, 1);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('calçado', 'tênis all star', 'vermelho', '34', 199.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('calçado', 'tênis all star', 'vermelho', '37', 199.90, 1);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('short', 'short jeans', 'azul', '38', 99.90, 1);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('short', 'short jeans', 'branco', '40', 109.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('short', 'short jeans', 'preto', '36', 89.90, 1);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('short', 'short jeans', 'azul', '42', 89.90, 2);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('camisa', 'camisa com botões', 'verde', '38', 69.90, 1);
+INSERT INTO produtos ( tipo, descricao, cor, tamanho, preco, estoque )  VALUES ('camisa', 'camisa com botões', 'lilás', '40', 69.90, 2);
+
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (12345678910, 'joao da silva', 'joao@joao.com.br', 'rua da rosa, numero 13', '3140038922');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (33345678910, 'maria da silva', 'maria@maria.com.br', 'rua da rosa, numero 14', '3140038933');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (22245678910, 'marcos da silva', 'marcos@marcos.com.br', 'rua da rosa, numero 15', '3140038944');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (11145678910, 'joao da silva', 'joana@joana.com.br', 'rua da rosa, numero 16', '3140038955');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (00045678910, 'mario da silva', 'mario@mario.com.br', 'rua da rosa, numero 17', '3140038966');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (44445678910, 'luisa da silva', 'luisa@luisa.com.br', 'rua da rosa, numero 18', '3140038977');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (55545678910, 'adiel da silva', 'adiel@adiel.com.br', 'rua da rosa, numero 19', '3140038988');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (66645678910, 'lara da silva', 'lara@lara.com.br', 'rua da rosa, numero 20', '3140038999');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (77745678910, 'sara da silva', 'sara@sara.com.br', 'rua da rosa, numero 21', '3140038900');
+INSERT INTO clientes (cpf, nome, email, endereco, telefone) values (88845678910, 'gertrudes da silva', 'gertrudes@gertrudes.com.br', 'rua da rosa, numero 22', '3140038901');
+
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (1, 12345678910, 'joao da silva', 'gostei', '2022-01-06', 'produto de ótima qualidade', 10);  
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (4, 12345678910, 'joao da silva', 'legal', '2022-11-06', 'muito confortável', 9); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (15, 12345678910, 'joao da silva', 'perfeita', '2022-11-06', 'veste muito bem', 10); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (2, 33345678910, 'maria da silva', 'ruim', '2022-06-25', 'não se parece com a foto', 2); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (6, 33345678910, 'maria da silva', 'legal', '2022-12-06', 'produto de ótima qualidade', 10); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (10, 33345678910, 'maria da silva', 'lindo', '2022-10-06', 'produto veste muito bem', 8); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (3, 22245678910, 'marcos da silva', 'gostei', '2022-05-06', 'produto de ótima qualidade', 9);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (9, 22245678910, 'marcos da silva', 'confortavel', '2022-06-30', 'produto muito confortavel', 8);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (14, 22245678910, 'marcos da silva', 'bonita', '2022-06-06', 'produto muito bonito', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (1, 44445678910, 'luisa da silva', 'bonita', '2022-07-07', 'produto muito bonito', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (5, 44445678910, 'luisa da silva', 'lindo', '2022-07-07', 'confortável', 9);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (12, 44445678910, 'luisa da silva', 'lindo', '2022-05-07', 'produto de ótima qualidade', 8);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (14, 44445678910, 'luisa da silva', 'bom', '2022-07-28', 'gostei da cor', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (14, 55545678910, 'adiel da silva', 'bom', '2022-07-07', 'gostei da cor', 8);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (2, 55545678910, 'adiel da silva', 'gostei', '2022-05-06', 'produto de ótima qualidade', 9);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (7, 55545678910, 'adiel da silva', 'confortavel', '2022-07-07', 'produto muito confortavel', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (12, 55545678910, 'adiel da silva', 'lindo', '2022-10-07', 'produto veste muito bem', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (1, 66645678910, 'lara da silva', 'gostei', '2022-01-07', 'produto de ótima qualidade', 8);  
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (4, 66645678910, 'lara da silva', 'legal', '2022-11-07', 'muito confortável', 10); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (15, 66645678910, 'lara da silva', 'perfeita', '2022-11-07', 'veste muito bem', 10); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (2, 77745678910, 'sara da silva', 'show', '2022-06-06', 'produto bonito', 10); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (6, 77745678910, 'sara da silva', 'legal', '2022-10-07', 'produto de ótima qualidade', 10); 
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (10, 77745678910, 'sara da silva', 'lindo', '2022-10-07', 'produto veste muito bem', 8);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (1, 88845678910, 'gertrudes da silva', 'gostei', '2022-05-06', 'produto de ótima qualidade', 9);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (5, 88845678910, 'gertrudes da silva', 'confortavel', '2022-06-30', 'produto muito confortavel', 8);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (8, 88845678910, 'gertrudes da silva', 'bonita', '2022-06-06', 'produto muito bonito', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (10, 88845678910, 'gertrudes da silva', 'bonita', '2022-07-07', 'produto muito bonito', 10);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (12, 88845678910, 'gertrudes da silva', 'lindo', '2022-07-07', 'confortável', 9);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (14, 88845678910, 'gertrudes da silva', 'lindo', '2022-05-07', 'produto de ótima qualidade', 8);
+INSERT INTO avaliacoes (idprodutos, cpf, nome, titulo, `data`, comentario, nota) values (15, 88845678910, 'gertrudes da silva', 'bom', '2022-04-28', 'gostei da cor', 10); 
+
+
